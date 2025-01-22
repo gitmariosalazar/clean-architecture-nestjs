@@ -137,21 +137,21 @@ CREATE TABLE users (
 │   ├──📂settings/
 │   │   ├──📜envs.ts
 │   │   └──📜index.ts
-│   └──📂shared/
-│       ├──📂database/
-│       │   ├──📜mysql.service.ts
-│       │   ├──📜postgres.service.ts
-│       │   └──📜add-others.ts
-│       ├──📂prisma/
-│       │   ├──📂migrations/
-│       │   ├──📜prisma.service.ts
-│       │   └── ▲ schema.prisma
-│       └──📂typeorm/
-│           └──📜typeorm.database.ts
-├──📜app.module.ts
-├──📜main.ts
-└──📂test/
-└──.env
+│   ├──📂shared/
+│   │    ├──📂database/
+│   │    │   ├──📜mysql.service.ts
+│   │    │   ├──📜postgres.service.ts
+│   │    │   └──📜add-others.ts
+│   │    ├──📂prisma/
+│   │    │   ├──📂migrations/
+│   │    │   ├──📜prisma.service.ts
+│   │    │   └── ▲ schema.prisma
+│   │    └──📂typeorm/
+│   │        └──📜typeorm.database.ts
+│   │───📜app.module.ts
+│   │───📜main.ts
+│   └───📂test/
+└───.env
 ```
 
 ### 1. **Errors** (`/src/errors`)
