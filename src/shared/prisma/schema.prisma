@@ -1,0 +1,51 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+// npm run prisma:generate
+// npm run prisma:migrate
+// npm run prisma:studio
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Product {
+  id_product           Int      @id @default(autoincrement()) @map("id_product")
+  code                 String   @unique @map("code")
+  description          String?  @map("description")
+  iva                  Float    @map("iva") @db.DoublePrecision
+  mark                 String   @db.VarChar(50)
+  name                 String   @db.VarChar(100)
+  percentage_increment Float    @map("percentage_increment")
+  public_price         Float?   @map("public_price")
+  quantity             Int
+  supplier_price       Float    @map("supplier_price")
+  created_at           DateTime @default(now()) @map("created_at")
+  updated_at           DateTime @updatedAt @map("updated_at")
+
+  @@map("product")
+}
+
+model User {
+  id_user        Int      @id @default(autoincrement()) @map("id_user")
+  address        String   @map("address") @db.VarChar(100)
+  email          String   @unique @map("email") @db.VarChar(60)
+  firstname      String   @map("firstname") @db.VarChar(100)
+  identification String   @map("identification") @db.VarChar(13)
+  lastname       String   @map("lastname") @db.VarChar(60)
+  password       String   @map("password") @db.Text
+  phone          String   @map("phone") @db.VarChar(15)
+  token          String?  @map("token") @db.Text
+  created_at     DateTime @default(now()) @map("created_at")
+  updated_at     DateTime @updatedAt @map("updated_at")
+
+  @@map("users")
+}
