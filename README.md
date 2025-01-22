@@ -91,7 +91,7 @@ CREATE TABLE users (
 │   │   │   │   ├──📂service/
 │   │   │   │   │   └──📜product-use-case.service.ts
 │   │   │   │   └──📂usecase/
-│   │   │   │       └──📜product-use-case.interfacece.ts
+│   │   │   │       └──📜product-use-case.interface.ts
 │   │   │   ├──📂domain/
 │   │   │   │   ├──📂contract/
 │   │   │   │   │   └──📜product.repository.interface.ts
@@ -104,13 +104,13 @@ CREATE TABLE users (
 │   │   │   │           └──📜product.model.ts
 │   │   │   └──📂infrastructure/
 │   │   │       ├──📂adapters/
-│   │   │       │   └──📜product.repository.interface.ts
+│   │   │       │   └──📜product.adapters.ts
 │   │   │       ├──📂contracts/
-│   │   │       │   └──📜product.repository.interface.ts
+│   │   │       │   └──📜product-service.interface.ts
 │   │   │       ├──📂controller/
-│   │   │       │   └──📜product.repository.interface.ts
+│   │   │       │   └──📜product.controller.ts
 │   │   │       ├──📂middlewares/
-│   │   │       │   └──📜product.repository.interface.ts
+│   │   │       │   └──📜product.middlewares.ts
 │   │   │       ├──📂models/
 │   │   │       │   └──📂entities/
 │   │   │       │       └──📜product.entity.ts
