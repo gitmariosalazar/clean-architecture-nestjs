@@ -24,11 +24,11 @@
     "prisma:studio": "prisma studio --schema=src/shared/prisma/schema.prisma"
   },
   "dependencies": {
-    "@nestjs/common": "^11.0.3",
-    "@nestjs/core": "^11.0.3",
-    "@nestjs/microservices": "^11.0.3",
+    "@nestjs/common": "^11.0.4",
+    "@nestjs/core": "^11.0.4",
+    "@nestjs/microservices": "^11.0.4",
     "@nestjs/mongoose": "^11.0.0",
-    "@nestjs/platform-express": "^11.0.3",
+    "@nestjs/platform-express": "^11.0.4",
     "@nestjs/swagger": "^11.0.2",
     "@nestjs/typeorm": "^11.0.0",
     "@prisma/client": "^6.2.1",
@@ -36,7 +36,7 @@
     "joi": "^17.13.3",
     "mongoose": "^8.9.5",
     "morgan": "^1.10.0",
-    "mssql": "^11.0.1",
+    "mssql": "^10.0.4",
     "mysql2": "^3.12.0",
     "nodemon": "^3.1.9",
     "pg": "^8.13.1",
@@ -45,9 +45,9 @@
     "typeorm": "^0.3.20"
   },
   "devDependencies": {
-    "@nestjs/cli": "^11.0.0",
+    "@nestjs/cli": "^11.0.2",
     "@nestjs/schematics": "^11.0.0",
-    "@nestjs/testing": "^11.0.3",
+    "@nestjs/testing": "^11.0.4",
     "@types/express": "^5.0.0",
     "@types/jest": "^29.5.14",
     "@types/node": "^22.10.7",
