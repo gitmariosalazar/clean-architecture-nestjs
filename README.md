@@ -24,7 +24,8 @@
 
 
 # 🧿 Clean Architecture with NestJS
-- Website Project - [https://clean-architecture-nestjs-ms.vercel.app/api](https://clean-architecture-nestjs-ms.vercel.app/api){:target="_blank"}
+- [Website Project](https://clean-architecture-nestjs-ms.vercel.app/api)  
+[https://clean-architecture-nestjs-ms.vercel.app/api](https://clean-architecture-nestjs-ms.vercel.app/api){:target="_blank"}
 
 This project implements **Clean Architecture** using the NestJS framework. The structure ensures a clear separation of concerns by organizing code into layers (Application, Domain, Infrastructure) and modules for scalability and maintainability.
 
