@@ -36,19 +36,6 @@ export class ProductUseCaseService implements InterfaceUseCaseProductService {
     const productModel: ProductModel = ProductMapper.productRequestToProductModel(productRequest);
     productModel.setPercentageIncrement(this.percentage_increment);
     productModel.setPublicPrice(publicPrice);
-    /*
-    const productModel: ProductModel = new ProductModel(
-      productRequest.code,
-      productRequest.description,
-      productRequest.iva,
-      productRequest.mark,
-      productRequest.name,
-      this.percentage_increment,
-      publicPrice,
-      productRequest.quantity,
-      productRequest.supplier_price,
-    );
-    */
     return this.productRepository.createProduct(productModel);
   }
 
@@ -68,19 +55,6 @@ export class ProductUseCaseService implements InterfaceUseCaseProductService {
     const productModel: ProductModel = ProductMapper.productRequestToProductModel(productRequest);
     productModel.setPercentageIncrement(this.percentage_increment);
     productModel.setPublicPrice(publicPrice);
-    /*
-    const productModel: ProductModel = new ProductModel(
-      productRequest.code,
-      productRequest.description,
-      productRequest.iva,
-      productRequest.mark,
-      productRequest.name,
-      this.percentage_increment,
-      publicPrice,
-      productRequest.quantity,
-      productRequest.supplier_price,
-    );
-    */
     return this.productRepository.updateProduct(productModel, code);
   }
 
